@@ -1,0 +1,17 @@
+server:
+  port: 8088
+
+#\u914D\u7F6E\u6570\u636E\u5E93\u8FDE\u63A5\u4FE1\u606F
+spring:
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://127.0.0.1:3306/mytest?characterEncoding=UTF-8&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+mybatis:
+  mapper-locations: classpath:mapper/**.xml
+  type-aliases-package: com.ransibi.springbootmybatis.dao
+
+
