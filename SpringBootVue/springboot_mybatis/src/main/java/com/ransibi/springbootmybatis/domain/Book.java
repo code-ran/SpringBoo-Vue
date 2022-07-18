@@ -10,7 +10,7 @@ import lombok.Data;
  * @Version1.0
  */
 @Data
-public class Student {
+public class Book {
     private long id;
     private String bookNumber;
     private String bookName;

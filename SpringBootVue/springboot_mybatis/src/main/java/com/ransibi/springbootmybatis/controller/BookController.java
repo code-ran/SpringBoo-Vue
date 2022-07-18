@@ -1,7 +1,7 @@
 package com.ransibi.springbootmybatis.controller;
 
-import com.ransibi.springbootmybatis.dao.StudentMapper;
-import com.ransibi.springbootmybatis.domain.Student;
+import com.ransibi.springbootmybatis.dao.BookMapper;
+import com.ransibi.springbootmybatis.domain.Book;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,15 +11,15 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("student")
+@RequestMapping("book")
 @CrossOrigin("*")
-public class StudentController {
+public class BookController {
     @Autowired
-    private StudentMapper studentMapper;
+    private BookMapper bookMapper;
 
     @GetMapping("/info")
-    public List<Student> getStudents() {
-        List<Student> lst = studentMapper.selectAll();
+    public List<Book> getStudents() {
+        List<Book> lst = bookMapper.selectAll();
         return lst;
     }
 //    @PostMapping("/add")
