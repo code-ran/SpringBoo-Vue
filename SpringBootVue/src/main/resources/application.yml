@@ -1,0 +1,16 @@
+server:
+  port: 8090
+
+suspend:
+  status:
+    value: 10
+
+
+dict:
+  ignores:
+    - 1001
+    - 1002
+    - 1003
+    - 1004
+
+
